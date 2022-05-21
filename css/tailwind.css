@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .buttons .white {
+    @apply dark:text-white text-gray-700;
+  }
+  .btn {
+    @apply text-[2.4rem] py-2 font-medium bg-gray-200 dark:bg-gray-800 rounded-lg flex justify-center items-center;
+  }
+  .dark-mode button {
+    @apply p-2 w-12 h-12 bg-gray-200/60 dark:bg-gray-700/50   text-gray-400;
+  }
+  .dark-mode .btn-active {
+    @apply text-black dark:text-white;
+  }
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
