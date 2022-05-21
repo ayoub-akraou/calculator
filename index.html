@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html class="text-[62.5%]" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Calculatrice</title>
+  </head>
+  <body class="min-h-screen flex">
+    <main
+      class="container shadow-[0_0_3rem_rgb(0,0,0,0.1)] m-auto bg-white dark:bg-gray-900 w-[30rem] h-[55rem] flex flex-col justify-end rounded-3xl"
+    >
+      <div
+        class="dark-mode rounded-xl overflow-hidden flex mb-auto mt-4 mx-auto"
+      >
+        <button class="light-btn btn-active">
+          <svg
+            class="icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-sun"
+          >
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button class="dark-btn">
+          <svg
+            class="icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-moon"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+      <p
+        class="insert text-gray-800 dark:text-gray-100 text-[2rem] text-right px-8 font-medium"
+      >
+        number
+      </p>
+      <p
+        class="result text-[4.6rem] text-gray-800 dark:text-gray-100 text-right font-medium px-8 pb-2 tracking-wide"
+      >
+        12000
+      </p>
+      <div
+        class="buttons grid grid-cols-4 gap-x-6 gap-y-6 px-8 py-12 rounded-3xl bg-gray-200/60 dark:bg-gray-700 text-white"
+      >
+        <button class="btn text-green-400">AC</button
+        ><button class="btn text-green-400">b</button
+        ><button class="btn text-green-400">r</button
+        ><button class="btn text-orange-500">÷</button
+        ><button class="btn white">7</button><button class="btn white">8</button
+        ><button class="btn white">9</button
+        ><button class="btn text-orange-500">×</button
+        ><button class="btn white">4</button><button class="btn white">5</button
+        ><button class="btn white">6</button
+        ><button class="btn text-orange-500">-</button
+        ><button class="btn white">1</button><button class="btn white">2</button
+        ><button class="btn white">3</button
+        ><button class="btn text-orange-500">+</button
+        ><button class="btn white">k</button><button class="btn white">0</button
+        ><button class="btn white">.</button
+        ><button class="btn text-orange-500">=</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
